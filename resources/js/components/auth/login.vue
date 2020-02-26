@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import User from '../../Helpers/User.js'
     export default {
         created() {
             if (User.loggedIn()) {
@@ -60,6 +61,7 @@
             login() {
                 axios.post('/api/auth/login',this.form)
                 .then(response => {
+                    console.log('response', response)
                     User.responseAfterLogin(response.data)
                     this.$router.push({ name: 'home' })
                 })
