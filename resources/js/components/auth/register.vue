@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group mt-4 mb-0">
-                                	<a class="btn btn-primary btn-block" href="login.html">Create Account</a>
+                                	<button type="button" class="btn btn-primary btn-block">Create Account</button>
                                 </div>
                             </form>
                         </div>

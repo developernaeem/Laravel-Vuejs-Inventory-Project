@@ -3,7 +3,7 @@ import AppStorage from './AppStorage.js';
 
 class User {
 
-	/* Response After Login Method Here.. and Check access_token, name */
+	/* Response After Login Method Here.. and Check access_token or name */
 	responseAfterLogin(response) {
 		const access_token = response.data.access_token;
 		const username = response.data.name;
